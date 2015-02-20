@@ -1,0 +1,382 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : sans-serif;
+			color : white;
+			background-color : #21489e;
+			padding: 0.3em;
+		}
+		body { 
+			font-family : verdana;
+		}
+		td, th {  
+			padding: 0.5em;
+			text-align : center;
+			width : 18%;	
+		}
+		th { 
+			background-color : #A6CAF0;
+		
+		}
+		th.column1, td.column1 { 
+			text-align: left;
+			width : auto; 
+		}
+		table { 
+			width : 100%; 
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3 {
+			padding-top : 0.1em;
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width : auto;
+			vertical-align: top
+		}
+		.front_matter_column1 {
+			text-align : right;
+		}
+		.total_column1, .total_column {
+			font-weight : bold;	
+		}
+		.total_column1 {
+			text-align : right;
+		}
+		.front_matter_column2 {
+			text-align : center;
+		}
+		.front_matter_column3 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #EEEEE0 
+		}
+		tr.onmouseout_even { 
+			background-color : #F3F3E3   
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : lightYellow 
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #008000 
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Net Status Report</title>
+</head>
+<body onload="document.getElementById('radio_mil').click()"><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD14\Templates\AD-rgb_logo_223x64.gif
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Net Status Report</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">2/20/2015</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">2:15:06 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3"><a href="file:///D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc" class="file"><acronym title="D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc">D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc</acronym></a></td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Units</td>
+<td class="front_matter_column2">:</td>
+<td class="front_matter_column3">
+<form><input type="radio" name="radio_units" id="radio_mm" onclick="changeUnits(this, 'mm')">mm<input type="radio" name="radio_units" id="radio_mil" onclick="changeUnits(this, 'mil')">mils</form>
+</td>
+</tr>
+</table>
+<hr><a name="IDASAWSM"><table>
+<tr>
+<th class="column1">Nets</th>
+<th class="column2">Layer</th>
+<th class="column3">Length</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1022.5mil|Location2.X=3082mil|Location1.Y=1183.564mil|Location2.Y=3669mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1022.5mil|Location2.X=3082mil|Location1.Y=1183.564mil|Location2.Y=3669mil|Absolute=True">GND</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="32203083">3220.308mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2057mil|Location2.X=2472mil|Location1.Y=3097.5mil|Location2.Y=3348mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2057mil|Location2.X=2472mil|Location1.Y=3097.5mil|Location2.Y=3348mil|Absolute=True">IC1EN</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4964508">496.451mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.5mil|Location2.X=2472mil|Location1.Y=2747.5mil|Location2.Y=3239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2192.5mil|Location2.X=2472mil|Location1.Y=2747.5mil|Location2.Y=3239mil|Absolute=True">NetC1_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6098511">609.851mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1988mil|Location2.X=2226mil|Location1.Y=3047.5mil|Location2.Y=3239mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1988mil|Location2.X=2226mil|Location1.Y=3047.5mil|Location2.Y=3239mil|Absolute=True">NetC1_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2653381">265.338mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1881mil|Location2.X=2076mil|Location1.Y=2621.536mil|Location2.Y=2682.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1881mil|Location2.X=2076mil|Location1.Y=2621.536mil|Location2.Y=2682.5mil|Absolute=True">NetC2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1225770">122.577mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1826mil|Location2.X=2076mil|Location1.Y=2997.5mil|Location2.Y=3090mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1826mil|Location2.X=2076mil|Location1.Y=2997.5mil|Location2.Y=3090mil|Absolute=True">NetC3_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1906396">190.64mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1629.064mil|Location2.X=2062.708mil|Location1.Y=1183.564mil|Location2.Y=3037mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1629.064mil|Location2.X=2062.708mil|Location1.Y=1183.564mil|Location2.Y=3037mil|Absolute=True">NetC6_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="22917286">2291.729mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2548.354mil|Location2.X=2982mil|Location1.Y=1183.564mil|Location2.Y=3100.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2548.354mil|Location2.X=2982mil|Location1.Y=1183.564mil|Location2.Y=3100.5mil|Absolute=True">NetC9_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="27494660">2749.466mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2384mil|Location2.X=2627.598mil|Location1.Y=2829.5mil|Location2.Y=2900.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2384mil|Location2.X=2627.598mil|Location1.Y=2829.5mil|Location2.Y=2900.5mil|Absolute=True">NetIC1_15</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1695984">169.598mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1557mil|Location2.X=2472mil|Location1.Y=2646mil|Location2.Y=2944mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1557mil|Location2.X=2472mil|Location1.Y=2646mil|Location2.Y=2944mil|Absolute=True">NetIC1_16</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9544113">954.411mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1557mil|Location2.X=2472mil|Location1.Y=2431mil|Location2.Y=3024mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1557mil|Location2.X=2472mil|Location1.Y=2431mil|Location2.Y=3024mil|Absolute=True">NetIC1_17</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="12584672">1258.467mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2319.5mil|Location2.X=2559mil|Location1.Y=2000.402mil|Location2.Y=3032.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2319.5mil|Location2.X=2559mil|Location1.Y=2000.402mil|Location2.Y=3032.5mil|Absolute=True">NetIC1_18</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="11555118">1155.512mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2384mil|Location2.X=2617.598mil|Location1.Y=3029.5mil|Location2.Y=3100.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2384mil|Location2.X=2617.598mil|Location1.Y=3029.5mil|Location2.Y=3100.5mil|Absolute=True">NetIC1_19</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="1595980">159.598mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1679.5mil|Location2.X=2076mil|Location1.Y=2947.5mil|Location2.Y=3112.402mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1679.5mil|Location2.X=2076mil|Location1.Y=2947.5mil|Location2.Y=3112.402mil|Absolute=True">NetIC1_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4037056">403.706mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1342.402mil|Location2.X=2076mil|Location1.Y=1874.5mil|Location2.Y=2932.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1342.402mil|Location2.X=2076mil|Location1.Y=1874.5mil|Location2.Y=2932.5mil|Absolute=True">NetIC1_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="16573595">1657.36mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1241mil|Location2.X=2076mil|Location1.Y=2696mil|Location2.Y=2894mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1241mil|Location2.X=2076mil|Location1.Y=2696mil|Location2.Y=2894mil|Absolute=True">NetIC1_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="9897107">989.711mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1226mil|Location2.X=2076mil|Location1.Y=2497.5mil|Location2.Y=2832.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1226mil|Location2.X=2076mil|Location1.Y=2497.5mil|Location2.Y=2832.5mil|Absolute=True">NetIC1_7</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="11684974">1168.497mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1842.5mil|Location2.X=2259mil|Location1.Y=1894.5mil|Location2.Y=2794mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1842.5mil|Location2.X=2259mil|Location1.Y=1894.5mil|Location2.Y=2794mil|Absolute=True">NetIC1_8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="12563443">1256.344mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146mil|Location2.X=1496.788mil|Location1.Y=2621mil|Location2.Y=3599mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1146mil|Location2.X=1496.788mil|Location1.Y=2621mil|Location2.Y=3599mil|Absolute=True">NetIC2_1</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="15441946">1544.195mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1211mil|Location2.X=1408mil|Location1.Y=2757.5mil|Location2.Y=3304mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1211mil|Location2.X=1408mil|Location1.Y=2757.5mil|Location2.Y=3304mil|Absolute=True">NetIC2_2</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="7236345">723.635mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1315mil|Location2.X=1594.788mil|Location1.Y=2807.5mil|Location2.Y=3599mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1315mil|Location2.X=1594.788mil|Location1.Y=2807.5mil|Location2.Y=3599mil|Absolute=True">NetIC2_3</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="12494732">1249.473mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1092.5mil|Location2.X=1408mil|Location1.Y=2507.5mil|Location2.Y=3204mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1092.5mil|Location2.X=1408mil|Location1.Y=2507.5mil|Location2.Y=3204mil|Absolute=True">NetIC2_4</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="11574823">1157.482mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1157.5mil|Location2.X=1792.426mil|Location1.Y=2707.5mil|Location2.Y=3662.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1157.5mil|Location2.X=1792.426mil|Location1.Y=2707.5mil|Location2.Y=3662.5mil|Absolute=True">NetIC2_5</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="18237093">1823.709mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1320mil|Location2.X=1645mil|Location1.Y=2607.5mil|Location2.Y=3092.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1320mil|Location2.X=1645mil|Location1.Y=2607.5mil|Location2.Y=3092.5mil|Absolute=True">NetIC2_6</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="6518528">651.853mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1557mil|Location2.X=1707.5mil|Location1.Y=2757.5mil|Location2.Y=3042.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1557mil|Location2.X=1707.5mil|Location1.Y=2757.5mil|Location2.Y=3042.5mil|Absolute=True">NetIC2_8</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3679360">367.936mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1092.5mil|Location2.X=1719mil|Location1.Y=2442.5mil|Location2.Y=3667.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1092.5mil|Location2.X=1719mil|Location1.Y=2442.5mil|Location2.Y=3667.5mil|Absolute=True">NetIC2_9</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="29606853">2960.685mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1075mil|Location2.X=1503.064mil|Location1.Y=1463.898mil|Location2.Y=1945.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1075mil|Location2.X=1503.064mil|Location1.Y=1463.898mil|Location2.Y=1945.5mil|Absolute=True">NetQ1_G</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="8540840">854.084mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1888.708mil|Location2.X=1962.708mil|Location1.Y=1463.898mil|Location2.Y=1965.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1888.708mil|Location2.X=1962.708mil|Location1.Y=1463.898mil|Location2.Y=1965.5mil|Absolute=True">NetQ2_G</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="3984663">398.466mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2319.5mil|Location2.X=2422.354mil|Location1.Y=1463.898mil|Location2.Y=1985mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2319.5mil|Location2.X=2422.354mil|Location1.Y=1463.898mil|Location2.Y=1985mil|Absolute=True">NetQ3_G</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="4336750">433.675mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2643mil|Location2.X=2882mil|Location1.Y=1463.898mil|Location2.Y=2900.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2643mil|Location2.X=2882mil|Location1.Y=1463.898mil|Location2.Y=2900.5mil|Absolute=True">NetQ4_G</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="14163466">1416.347mils
+			</a></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438mil|Location2.X=2620mil|Location1.Y=3376mil|Location2.Y=3599mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2438mil|Location2.X=2620mil|Location1.Y=3376mil|Location2.Y=3599mil|Absolute=True">VCC</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="2788772">278.877mils
+			</a></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1075mil|Location2.X=2897.5mil|Location1.Y=1075mil|Location2.Y=3717.5mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=1075mil|Location2.X=2897.5mil|Location1.Y=1075mil|Location2.Y=3717.5mil|Absolute=True">VSS</acronym></a></td>
+<td class="column2">Signal Layers Only</td>
+<td class="column3"><a name="coordinate" value="69432529">6943.253mils
+			</a></td>
+</tr>
+</table></a><a href="#top">Back to top</a><br><br></body>
+</html>

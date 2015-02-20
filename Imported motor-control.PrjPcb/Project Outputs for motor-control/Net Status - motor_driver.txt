@@ -1,0 +1,40 @@
+Net Status Report
+Filename     : D:\workspace\Altium\Imported motor-control.PrjPcb\motor_driver.PcbDoc
+Date         : 2/20/2015
+Time         : 2:15:06 AM
+Time Elapsed : 00:00:00
+
+Nets, Layer, Length
+    GND, Signal Layers Only, 3220.308mils
+    IC1EN, Signal Layers Only, 496.451mils
+    NetC1_1, Signal Layers Only, 609.851mils
+    NetC1_2, Signal Layers Only, 265.338mils
+    NetC2_1, Signal Layers Only, 122.577mils
+    NetC3_2, Signal Layers Only, 190.64mils
+    NetC6_1, Signal Layers Only, 2291.729mils
+    NetC9_1, Signal Layers Only, 2749.466mils
+    NetIC1_15, Signal Layers Only, 169.598mils
+    NetIC1_16, Signal Layers Only, 954.411mils
+    NetIC1_17, Signal Layers Only, 1258.467mils
+    NetIC1_18, Signal Layers Only, 1155.512mils
+    NetIC1_19, Signal Layers Only, 159.598mils
+    NetIC1_4, Signal Layers Only, 403.706mils
+    NetIC1_5, Signal Layers Only, 1657.36mils
+    NetIC1_6, Signal Layers Only, 989.711mils
+    NetIC1_7, Signal Layers Only, 1168.497mils
+    NetIC1_8, Signal Layers Only, 1256.344mils
+    NetIC2_1, Signal Layers Only, 1544.195mils
+    NetIC2_2, Signal Layers Only, 723.635mils
+    NetIC2_3, Signal Layers Only, 1249.473mils
+    NetIC2_4, Signal Layers Only, 1157.482mils
+    NetIC2_5, Signal Layers Only, 1823.709mils
+    NetIC2_6, Signal Layers Only, 651.853mils
+    NetIC2_8, Signal Layers Only, 367.936mils
+    NetIC2_9, Signal Layers Only, 2960.685mils
+    NetQ1_G, Signal Layers Only, 854.084mils
+    NetQ2_G, Signal Layers Only, 398.466mils
+    NetQ3_G, Signal Layers Only, 433.675mils
+    NetQ4_G, Signal Layers Only, 1416.347mils
+    VCC, Signal Layers Only, 278.877mils
+    VSS, Signal Layers Only, 6943.253mils
+count : 32

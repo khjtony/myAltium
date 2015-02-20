@@ -1,0 +1,19 @@
+---------------------------------------------------------------------------
+NCDrill File Report For: motor_driver.PcbDoc   2/20/2015  2:44:32 AM
+---------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : motor_driver.TXT
+
+Tool         Hole Size           Hole Type     Hole Count Plated       Tool Travel
+---------------------------------------------------------------------------
+T1        28mil (0.7112mm)         Round          34               11.23 Inch (285.18 mm)
+T2        32mil (0.8128mm)         Round          4                0.88 Inch (22.24 mm)
+T3        40mil (1.016mm)          Round          8                1.30 Inch (33.14 mm)
+T4        44mil (1.1176mm)         Round          22               4.31 Inch (109.48 mm)
+T5        120mil (3.048mm)         Round          4                6.98 Inch (177.32 mm)
+T6        130mil (3.302mm)         Round          4                1.38 Inch (35.02 mm)
+---------------------------------------------------------------------------
+Totals                                            76               26.08 Inch (662.39 mm)
+
+Total Processing Time (hh:mm:ss) : 00:00:00
