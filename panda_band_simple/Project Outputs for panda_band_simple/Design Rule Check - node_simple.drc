@@ -1,0 +1,192 @@
+Protel Design System Design Rule Check
+PCB File : D:\workspace\Altium\panda_band_simple\node_simple.PcbDoc
+Date     : 2/20/2015
+Time     : 7:09:28 PM
+
+Processing Rule : Rule
+Rule Violations :0
+
+Processing Rule : Net Antennae (Tolerance=0mil) (All)
+Rule Violations :0
+
+Processing Rule : Silk primitive without silk layer
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-125.063mil,435mil)(-105.063mil,435mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-125.063mil,533.268mil)(-105.063mil,533.268mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-125.063mil,632.638mil)(-105.063mil,632.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-125.063mil,730.638mil)(-105.063mil,730.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-275.063mil,796.638mil)(-275.063mil,875.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-275.063mil,875.638mil)(245mil,875.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-240.063mil,391.26mil)(-215.063mil,391.26mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-275.063mil,371.26mil)(-240.063mil,391.26mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-275.063mil,291.26mil)(-275.063mil,371.26mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-275.063mil,291.26mil)(245mil,291.26mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-215.063mil,391.26mil)(150mil,391.26mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-215.063mil,391.26mil)(-215.063mil,776.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-215.063mil,776.638mil)(150mil,776.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-240.063mil,776.638mil)(-215.063mil,776.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (-275.063mil,796.638mil)(-240.063mil,776.638mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1159.001mil,297mil)(1159.001mil,376mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1099.001mil,781.379mil)(1124.001mil,781.379mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1124.001mil,781.379mil)(1159.001mil,801.379mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1159.001mil,801.379mil)(1159.001mil,881.379mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (638.938mil,881.379mil)(1159.001mil,881.379mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1099.001mil,396mil)(1099.001mil,781.379mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1099.001mil,396mil)(1124.001mil,396mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Track (1124.001mil,396mil)(1159.001mil,376mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "SV1" (-268mil,909mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "SV2" (570mil,914mil)  Top Overlay
+   Violation between Silk To Board Region Clearance (Out of silkscreen region) : Text "P1" (351mil,873mil)  Top Overlay
+Rule Violations :26
+
+Processing Rule : Silk to Silk (Clearance=10mil) (All),(All)
+   Violation between Text "LED4" (755mil,235mil)  Top Overlay and 
+                     Track (898mil,193mil)(898mil,222mil)  Top Overlay
+   Violation between Text "LED1" (175mil,254mil)  Top Overlay and 
+                     Track (245mil,291.26mil)(245mil,395.276mil)  Top Overlay
+   Violation between Text "LED1" (175mil,254mil)  Top Overlay and 
+                     Track (-275.063mil,291.26mil)(245mil,291.26mil)  Top Overlay
+   Violation between Text "LED3" (575mil,245mil)  Top Overlay and 
+                     Track (638.938mil,297mil)(638.938mil,403mil)  Top Overlay
+   Violation between Text "LED4" (755mil,235mil)  Top Overlay and 
+                     Track (638.938mil,297mil)(1159.001mil,297mil)  Top Overlay
+   Violation between Text "LED3" (575mil,245mil)  Top Overlay and 
+                     Track (638.938mil,297mil)(1159.001mil,297mil)  Top Overlay
+   Violation between Text "1" (375mil,815mil)  Top Overlay and 
+                     Track (345mil,785mil)(545mil,785mil)  Top Overlay
+   Violation between Text "5" (475mil,835mil)  Top Overlay and 
+                     Track (345mil,785mil)(545mil,785mil)  Top Overlay
+   Violation between Text "4" (375mil,375mil)  Top Overlay and 
+                     Track (345mil,385mil)(545mil,385mil)  Top Overlay
+   Violation between Text "8" (475mil,375mil)  Top Overlay and 
+                     Track (345mil,385mil)(545mil,385mil)  Top Overlay
+   Violation between Text "LED3" (575mil,245mil)  Top Overlay and 
+                     Text "LED4" (755mil,235mil)  Top Overlay
+   Violation between Text "1" (698.938mil,319mil)  Top Overlay and 
+                     Text "LED3" (575mil,245mil)  Top Overlay
+   Violation between Text "LED2" (370mil,254mil)  Top Overlay and 
+                     Text "LED3" (575mil,245mil)  Top Overlay
+   Violation between Text "LED1" (175mil,254mil)  Top Overlay and 
+                     Text "LED2" (370mil,254mil)  Top Overlay
+Rule Violations :14
+
+Processing Rule : Silk To Solder Mask (Clearance=10mil) (IsPad),(All)
+   Violation between Pad LED4-A(830mil,170mil)  Multi-Layer and 
+                     Arc (830mil,120.002mil)  Top Overlay
+   Violation between Pad LED4-A(830mil,170mil)  Multi-Layer and 
+                     Arc (830.177mil,120.293mil)  Top Overlay
+   Violation between Pad LED4-A(830mil,170mil)  Multi-Layer and 
+                     Arc (830mil,120mil)  Top Overlay
+   Violation between Pad LED4-K(830mil,70mil)  Multi-Layer and 
+                     Arc (830.652mil,119.681mil)  Top Overlay
+   Violation between Pad LED4-A(830mil,170mil)  Multi-Layer and 
+                     Arc (830mil,120mil)  Top Overlay
+   Violation between Pad LED4-K(830mil,70mil)  Multi-Layer and 
+                     Arc (829.891mil,119.79mil)  Top Overlay
+   Violation between Pad LED3-A(640mil,170mil)  Multi-Layer and 
+                     Arc (640mil,120.002mil)  Top Overlay
+   Violation between Pad LED3-A(640mil,170mil)  Multi-Layer and 
+                     Arc (640.177mil,120.293mil)  Top Overlay
+   Violation between Pad LED3-A(640mil,170mil)  Multi-Layer and 
+                     Arc (640mil,120mil)  Top Overlay
+   Violation between Pad LED3-K(640mil,70mil)  Multi-Layer and 
+                     Arc (640.652mil,119.681mil)  Top Overlay
+   Violation between Pad LED3-A(640mil,170mil)  Multi-Layer and 
+                     Arc (640mil,120mil)  Top Overlay
+   Violation between Pad LED3-K(640mil,70mil)  Multi-Layer and 
+                     Arc (639.891mil,119.79mil)  Top Overlay
+   Violation between Pad LED2-A(445mil,170mil)  Multi-Layer and 
+                     Arc (445mil,120.002mil)  Top Overlay
+   Violation between Pad LED2-A(445mil,170mil)  Multi-Layer and 
+                     Arc (445.177mil,120.293mil)  Top Overlay
+   Violation between Pad LED2-A(445mil,170mil)  Multi-Layer and 
+                     Arc (445mil,120mil)  Top Overlay
+   Violation between Pad LED2-K(445mil,70mil)  Multi-Layer and 
+                     Arc (445.652mil,119.681mil)  Top Overlay
+   Violation between Pad LED2-A(445mil,170mil)  Multi-Layer and 
+                     Arc (445mil,120mil)  Top Overlay
+   Violation between Pad LED2-K(445mil,70mil)  Multi-Layer and 
+                     Arc (444.891mil,119.79mil)  Top Overlay
+   Violation between Pad LED1-A(250mil,170mil)  Multi-Layer and 
+                     Arc (250mil,120.002mil)  Top Overlay
+   Violation between Pad LED1-A(250mil,170mil)  Multi-Layer and 
+                     Arc (250.177mil,120.293mil)  Top Overlay
+   Violation between Pad LED1-A(250mil,170mil)  Multi-Layer and 
+                     Arc (250mil,120mil)  Top Overlay
+   Violation between Pad LED1-K(250mil,70mil)  Multi-Layer and 
+                     Arc (250.652mil,119.681mil)  Top Overlay
+   Violation between Pad LED1-A(250mil,170mil)  Multi-Layer and 
+                     Arc (250mil,120mil)  Top Overlay
+   Violation between Pad LED1-K(250mil,70mil)  Multi-Layer and 
+                     Arc (249.891mil,119.79mil)  Top Overlay
+   Violation between Track (245mil,769.638mil)(245mil,875.638mil)  Top Overlay and 
+                     Pad SV1-1(260mil,730.638mil)  Multi-Layer
+   Violation between Track (245mil,671.638mil)(245mil,691.638mil)  Top Overlay and 
+                     Pad SV1-1(260mil,730.638mil)  Multi-Layer
+   Violation between Track (245mil,573.268mil)(245mil,593.638mil)  Top Overlay and 
+                     Pad SV1-2(260mil,632.638mil)  Multi-Layer
+   Violation between Track (245mil,671.638mil)(245mil,691.638mil)  Top Overlay and 
+                     Pad SV1-2(260mil,632.638mil)  Multi-Layer
+   Violation between Track (245mil,474.291mil)(245mil,495.276mil)  Top Overlay and 
+                     Pad SV1-4(260mil,435mil)  Multi-Layer
+   Violation between Track (245mil,291.26mil)(245mil,395.276mil)  Top Overlay and 
+                     Pad SV1-4(260mil,435mil)  Multi-Layer
+   Violation between Track (245mil,474.291mil)(245mil,495.276mil)  Top Overlay and 
+                     Pad SV1-3(260mil,533.425mil)  Multi-Layer
+   Violation between Track (245mil,573.268mil)(245mil,593.638mil)  Top Overlay and 
+                     Pad SV1-3(260mil,533.425mil)  Multi-Layer
+   Violation between Track (638.938mil,481mil)(638.938mil,501mil)  Top Overlay and 
+                     Pad SV2-1(623.938mil,442mil)  Multi-Layer
+   Violation between Track (638.938mil,297mil)(638.938mil,403mil)  Top Overlay and 
+                     Pad SV2-1(623.938mil,442mil)  Multi-Layer
+   Violation between Track (638.938mil,481mil)(638.938mil,501mil)  Top Overlay and 
+                     Pad SV2-2(623.938mil,540mil)  Multi-Layer
+   Violation between Track (638.938mil,579mil)(638.938mil,599.371mil)  Top Overlay and 
+                     Pad SV2-2(623.938mil,540mil)  Multi-Layer
+   Violation between Track (638.938mil,677.363mil)(638.938mil,698.347mil)  Top Overlay and 
+                     Pad SV2-4(623.938mil,737.638mil)  Multi-Layer
+   Violation between Track (638.938mil,777.363mil)(638.938mil,881.379mil)  Top Overlay and 
+                     Pad SV2-4(623.938mil,737.638mil)  Multi-Layer
+   Violation between Track (638.938mil,579mil)(638.938mil,599.371mil)  Top Overlay and 
+                     Pad SV2-3(623.938mil,639.213mil)  Multi-Layer
+   Violation between Track (638.938mil,677.363mil)(638.938mil,698.347mil)  Top Overlay and 
+                     Pad SV2-3(623.938mil,639.213mil)  Multi-Layer
+   Violation between Text "C2" (828mil,557mil)  Bottom Overlay and 
+                     Pad C1-2(815mil,625.945mil)  Bottom Layer
+Rule Violations :41
+
+Processing Rule : Minimum Solder Mask Sliver (Gap=10mil) (All),(All)
+   Violation between Pad C1-1(815mil,685mil)  Bottom Layer and 
+                     Pad C1-2(815mil,625.945mil)  Bottom Layer
+   Violation between Pad C2-1(805mil,499.056mil)  Bottom Layer and 
+                     Pad C2-2(805mil,440mil)  Bottom Layer
+   Violation between Pad C3-1(145mil,509.528mil)  Bottom Layer and 
+                     Pad C3-2(145mil,450.473mil)  Bottom Layer
+Rule Violations :3
+
+Processing Rule : Hole To Hole Clearance (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Hole Size Constraint (Min=1mil) (Max=100mil) (All)
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=32mil) (Max=50mil) (Preferred=45mil) (All)
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Relief Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Clearance Constraint (Gap=10mil) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+
+Violations Detected : 84
+Time Elapsed        : 00:00:01
