@@ -1,5 +1,5 @@
 ------------------------------------------------------------------------------------------
-Gerber File Extension Report For: motor_driver.GBR   2/20/2015  11:18:59 AM
+Gerber File Extension Report For: motor_driver.GBR   2/25/2015  5:47:03 PM
 ------------------------------------------------------------------------------------------
 
 
@@ -18,13 +18,8 @@ Layer Extension     Layer Description
 .GBO                Bottom Overlay                          
 .GKO                Keep-Out Layer                          
 .GM1                Mechanical 1                            
-.GM6                Mechanical 6                            
 .GM9                Mechanical 9                            
 .GM10               Mechanical 10                           
-.GM13               Mechanical 13                           
-.GM15               Mechanical 15                           
-.GM16               Mechanical 16                           
-.GM27               Mechanical 27                           
 .GD1                Drill Drawing                           
 .GG1                Drill Guide                             
 ------------------------------------------------------------------------------------------

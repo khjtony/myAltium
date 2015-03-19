@@ -7,22 +7,6 @@ Generating : Top Layer
 
     Adding Layer      : Top Layer
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
     Adding Layer      : Multi-Layer
 
 
@@ -42,27 +26,6 @@ Used DCodes :
     D22
     D23
     D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D45
 *************************************************************
 
 *************************************************************
@@ -70,22 +33,6 @@ Generating : Bottom Layer
       File : motor_driver.GBL
 
     Adding Layer      : Bottom Layer
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
 
     Adding Layer      : Multi-Layer
 
@@ -107,6 +54,62 @@ Used DCodes :
     D24
     D25
     D26
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : motor_driver.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D13
+    D14
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D25
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : motor_driver.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : motor_driver.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
     D27
     D28
     D29
@@ -115,9 +118,67 @@ Used DCodes :
     D32
     D33
     D34
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : motor_driver.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : motor_driver.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
     D35
     D36
     D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : motor_driver.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D35
+    D36
     D38
     D39
     D40
@@ -131,381 +192,11 @@ Used DCodes :
 *************************************************************
 
 *************************************************************
-Generating : Bottom Pad Master
-      File : motor_driver.GPB
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D10
-    D11
-    D13
-    D14
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-    D46
-*************************************************************
-
-*************************************************************
-Generating : Top Pad Master
-      File : motor_driver.GPT
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D39
-    D40
-    D41
-    D42
-    D43
-    D44
-*************************************************************
-
-*************************************************************
-Generating : Top Overlay
-      File : motor_driver.GTO
-
-    Adding Layer      : Top Overlay
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D48
-    D49
-    D50
-    D51
-    D52
-*************************************************************
-
-*************************************************************
-Generating : Top Paste
-      File : motor_driver.GTP
-
-    Adding Layer      : Top Paste
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D10
-    D11
-    D12
-    D13
-    D14
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Top Solder
-      File : motor_driver.GTS
-
-    Adding Layer      : Top Solder
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-    Adding Layer      : Top Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D53
-    D54
-    D55
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-*************************************************************
-
-*************************************************************
-Generating : Bottom Solder
-      File : motor_driver.GBS
-
-    Adding Layer      : Bottom Solder
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-    Adding Layer      : Bottom Layer
-
-    Adding Layer      : Multi-Layer
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D53
-    D54
-    D56
-    D57
-    D58
-    D59
-    D60
-    D61
-    D62
-    D63
-    D64
-    D65
-*************************************************************
-
-*************************************************************
 Generating : Bottom Paste
       File : motor_driver.GBP
 
     Adding Layer      : Bottom Paste
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
     Adding Layer      : Bottom Layer
 
     Adding Layer      : Multi-Layer
@@ -516,28 +207,7 @@ Used DCodes :
     D11
     D13
     D14
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
     D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D46
 *************************************************************
 
 *************************************************************
@@ -546,46 +216,9 @@ Generating : Bottom Overlay
 
     Adding Layer      : Bottom Overlay
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
     D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D48
 *************************************************************
 
 *************************************************************
@@ -594,45 +227,8 @@ Generating : Keep-Out Layer
 
     Adding Layer      : Keep-Out Layer
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
 *************************************************************
 
 *************************************************************
@@ -641,92 +237,9 @@ Generating : Mechanical 1
 
     Adding Layer      : Mechanical 1
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
     D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 6
-      File : motor_driver.GM6
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
 *************************************************************
 
 *************************************************************
@@ -735,45 +248,9 @@ Generating : Mechanical 9
 
     Adding Layer      : Mechanical 9
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
+    D48
 *************************************************************
 
 *************************************************************
@@ -782,254 +259,14 @@ Generating : Mechanical 10
 
     Adding Layer      : Mechanical 10
 
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 13
-      File : motor_driver.GM13
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 15
-      File : motor_driver.GM15
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 16
-      File : motor_driver.GM16
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-*************************************************************
-
-*************************************************************
-Generating : Mechanical 27
-      File : motor_driver.GM27
-
-    Adding Layer      : Mechanical 27
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
-
-
-Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
+    D48
 *************************************************************
 
 *************************************************************
 Generating : Drill Drawing
       File : motor_driver.GD1
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
 
     Adding Drill Pair : Bottom Layer-Top Layer
 
@@ -1037,50 +274,13 @@ Generating : Drill Drawing
 
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D66
-    D67
+    D49
+    D50
 *************************************************************
 
 *************************************************************
 Generating : Drill Guide
       File : motor_driver.GG1
-
-    Adding Layer      : Mechanical 1
-
-    Adding Layer      : Mechanical 6
-
-    Adding Layer      : Mechanical 9
-
-    Adding Layer      : Mechanical 10
-
-    Adding Layer      : Mechanical 13
-
-    Adding Layer      : Mechanical 15
-
-    Adding Layer      : Mechanical 16
-
-    Adding Layer      : Mechanical 27
 
     Adding Drill Pair : Bottom Layer-Top Layer
 
@@ -1088,27 +288,6 @@ Generating : Drill Guide
 
 
 Used DCodes :
-    D18
-    D19
-    D20
-    D21
-    D22
-    D23
-    D24
-    D25
-    D26
-    D27
-    D28
-    D29
-    D30
-    D31
-    D32
-    D33
-    D34
-    D35
-    D36
-    D37
-    D38
-    D66
+    D49
 *************************************************************
 

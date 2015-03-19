@@ -1,12 +1,33 @@
-Output: NC Drill Files
-Type  : NC Drill
-From  : Project [panda_band_simple.PrjPcb]
-   Generated File[node_simple.TXT]
-   Generated File[node_simple.LDP]
-   Generated File[node_simple.DRR]
+Output: Gerber Files
+Type  : Gerber
+From  : Variant [[No Variations]] of Project [panda_band_simple.PrjPcb]
+   Generated File[node_simple.GTL]
+   Generated File[node_simple.GBL]
+   Generated File[node_simple.GPB]
+   Generated File[node_simple.GPT]
+   Generated File[node_simple.GTO]
+   Generated File[node_simple.GTP]
+   Generated File[node_simple.GTS]
+   Generated File[node_simple.GBS]
+   Generated File[node_simple.GBP]
+   Generated File[node_simple.GBO]
+   Generated File[node_simple.GKO]
+   Generated File[node_simple.GM1]
+   Generated File[node_simple.GM6]
+   Generated File[node_simple.GM13]
+   Generated File[node_simple.GM15]
+   Generated File[node_simple.GM16]
+   Generated File[node_simple.GM27]
+   Generated File[node_simple.GML]
+   Generated File[node_simple.1]
+   Generated File[node_simple.GD1]
+   Generated File[node_simple.GG1]
+   Generated File[node_simple.RUL]
+   Generated File[node_simple.EXTREP]
+   Generated File[node_simple.REP]
 
 
-Files Generated   : 3
+Files Generated   : 24
 Documents Printed : 0
 
-Finished Output Generation At 7:19:58 PM On 2/20/2015
+Finished Output Generation At 10:47:30 AM On 2/25/2015
